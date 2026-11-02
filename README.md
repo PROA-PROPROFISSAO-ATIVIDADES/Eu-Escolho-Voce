@@ -1,8 +1,8 @@
-# 🍌 Toscas
+# 🍌 Toscos
 
-**Não sabe o que assistir? Deixa que o Toscas escolhe!**
+**Não sabe o que assistir? Deixa que o Toscos escolhe!**
 
-Toscas é um aplicativo mobile de escolhas aleatórias desenvolvido como parte da atividade **“Eu Escolho Você!”**. A proposta é ajudar os usuários a resolver pequenas indecisões do cotidiano de maneira simples, divertida e visualmente agradável.
+Toscos é um aplicativo mobile de escolhas aleatórias desenvolvido como parte da atividade **“Eu Escolho Você!”**. A proposta é ajudar os usuários a resolver pequenas indecisões do cotidiano de maneira simples, divertida e visualmente agradável.
 
 Nesta versão, o aplicativo é direcionado à escolha de filmes: o usuário pode visualizar uma coleção de opções e sortear um filme para decidir o que assistir.
 
@@ -14,7 +14,7 @@ O projeto também tem como objetivo explorar conceitos de desenvolvimento mobile
 
 ## 📱 Interface e identidade visual
 
-A identidade visual do Toscas foi pensada para transmitir personalidade, diversão e simplicidade.
+A identidade visual do Toscos foi pensada para transmitir personalidade, diversão e simplicidade.
 
 A interface utiliza uma combinação de cores contrastantes, componentes com cantos arredondados e elementos visuais inspirados no universo do entretenimento.
 
@@ -29,7 +29,7 @@ A interface utiliza uma combinação de cores contrastantes, componentes com can
 
 Confira o protótipo e os elementos da identidade visual:
 
-[**Acessar o projeto no Figma**](https://www.figma.com/design/zmgvueQhWDGYw4qqcTqFbh/Toscas?node-id=26-126&t=iF9oCtlhiJ7xH3WV-1)
+[**Acessar o projeto no Figma**]([https://www.figma.com/design/zmgvueQhWDGYw4qqcTqFbh/Toscos?node-id=26-126&t=iF9oCtlhiJ7xH3WV-1](https://www.figma.com/design/zmgvueQhWDGYw4qqcTqFbh/Toscos?node-id=1605-77&t=iF9oCtlhiJ7xH3WV-1))
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -65,10 +65,10 @@ Confira o protótipo e os elementos da identidade visual:
 
 O protótipo, a paleta de cores, a tipografia, os componentes e os elementos da marca estão documentados no Figma.
 
-🔗 [Toscas — Figma](https://www.figma.com/design/zmgvueQhWDGYw4qqcTqFbh/Toscas?node-id=26-126&t=iF9oCtlhiJ7xH3WV-1)
+🔗 [Toscos — Figma](https://www.figma.com/design/zmgvueQhWDGYw4qqcTqFbh/Toscos?node-id=26-126&t=iF9oCtlhiJ7xH3WV-1)
 
 ---
 
-**Toscas** — Às vezes, a melhor decisão é deixar o acaso decidir. 🍌
+**Toscos** — Às vezes, a melhor decisão é deixar o acaso decidir. 🍌
 
 Projeto acadêmico desenvolvido como parte da atividade *Eu Escolho Você!*.
