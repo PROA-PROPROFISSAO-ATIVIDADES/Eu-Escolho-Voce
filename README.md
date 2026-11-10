@@ -29,6 +29,8 @@ A interface utiliza uma combinação de cores contrastantes, componentes com can
 
 Confira o protótipo e os elementos da identidade visual:
 
+<img src="app/src/main/res/drawable/figma_brand_assets.png" alt="Identidade visual e telas do Toscos" width="720">
+
 [**Acessar o projeto no Figma**]([https://www.figma.com/design/zmgvueQhWDGYw4qqcTqFbh/Toscos?node-id=26-126&t=iF9oCtlhiJ7xH3WV-1](https://www.figma.com/design/zmgvueQhWDGYw4qqcTqFbh/Toscos?node-id=1605-77&t=iF9oCtlhiJ7xH3WV-1))
 
 ## 🛠️ Tecnologias utilizadas
