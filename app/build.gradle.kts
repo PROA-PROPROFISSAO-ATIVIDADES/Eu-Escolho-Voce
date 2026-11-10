@@ -47,6 +47,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.io.coil.kt)
+    implementation(libs.io.coil.network.okhttp)
     implementation(libs.retrofit2)
     implementation(libs.retrofit2.converter.gson)
     implementation(libs.kotlin.serialization.json)
