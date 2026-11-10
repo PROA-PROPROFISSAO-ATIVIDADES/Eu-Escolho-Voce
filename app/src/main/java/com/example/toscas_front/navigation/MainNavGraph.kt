@@ -1,35 +1,34 @@
 package com.example.toscas_front.navigation
 
-import androidx.navigation.NavDestination
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.navigation
 import com.example.toscas_front.pages.MoviesPage
 import com.example.toscas_front.pages.RandomPage
 import com.example.toscas_front.pages.SplashPage
+import com.example.toscas_front.viewModel.MovieViewModel
 
 fun NavGraphBuilder.mainNavGraph(
     navController: NavHostController,
-    currentDestination: NavDestination?
+    movieViewModel: MovieViewModel
 ){
     navigation<MainGraph>(startDestination = SplashRoute){
         composable<SplashRoute>(){
             SplashPage(
                 onFinished = {
                     navController.navigate(MoviesRoute) {
-                        popUpTo(SplashRoute) { inclusive = false}
+                        popUpTo(SplashRoute) { inclusive = true}
                     }
                 }
             )
         }
 
         composable<MoviesRoute> {
-            MoviesPage()
+            MoviesPage(movieViewModel)
         }
         composable<RandomRoute> {
-            RandomPage()
+            RandomPage(movieViewModel)
         }
     }
 }

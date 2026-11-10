@@ -67,6 +67,10 @@ O protótipo, a paleta de cores, a tipografia, os componentes e os elementos da 
 
 🔗 [Toscos — Figma](https://www.figma.com/design/zmgvueQhWDGYw4qqcTqFbh/Toscos?node-id=26-126&t=iF9oCtlhiJ7xH3WV-1)
 
+## 🤖 Uso de inteligência artificial
+
+A inteligência artificial foi utilizada de forma moderada para agilizar o fluxo de criação da animação de arrastar os cards de filmes.
+
 ---
 
 **Toscos** — Às vezes, a melhor decisão é deixar o acaso decidir. 🍌

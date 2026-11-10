@@ -7,11 +7,11 @@ import retrofit2.http.Query
 
 interface MovieApi {
 
-    @GET("discover/movies")
+    @GET("discover/movie")
     suspend fun discoverMovies(
-        @Header("Authorization") token: String,
+        @Query("api_key") apiKey: String,
         @Query("language") language: String = "pt-BR",
-        @Query("vote_count_gte") minimumVotes: Int = 100,
+        @Query("vote_count.gte") minimumVotes: Int = 100,
         @Query("page") page: Int = 1
     ) : MovieResponse
 }

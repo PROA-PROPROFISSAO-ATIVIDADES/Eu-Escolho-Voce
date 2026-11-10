@@ -5,7 +5,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -18,21 +17,25 @@ import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.toscas_front.R
 import com.example.toscas_front.components.NavigationComponent
 import com.example.toscas_front.ui.theme.OffBlack
 import com.example.toscas_front.ui.theme.OffWhite
 import com.example.toscas_front.ui.theme.RussoOne
+import com.example.toscas_front.viewModel.MovieViewModel
 
 @Composable
 fun AppNavHost(modifier: Modifier = Modifier){
     val navController = rememberNavController()
+    val movieViewModel: MovieViewModel = viewModel()
 
     val navBackStackEntry = navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry.value?.destination
 
     val showNavigation = currentDestination?.hasRoute<SplashRoute>() == false
-    val isMovieRoute = currentDestination?.hasRoute<MoviesRoute>() == true // ciente que não é boa pratica
+    val isMovieRoute = currentDestination?.hasRoute<MoviesRoute>() == true
+    val isRandomRoute = currentDestination?.hasRoute<RandomRoute>() == true
 
     Scaffold(
         modifier = modifier
@@ -48,7 +51,7 @@ fun AppNavHost(modifier: Modifier = Modifier){
                         contentDescription = "Logo horizontal"
                     )
                 }
-            ) else {
+            ) else if(isRandomRoute) {
                 Text(
                     text = "Filme sorteado:",
                     fontFamily = RussoOne,
@@ -63,7 +66,11 @@ fun AppNavHost(modifier: Modifier = Modifier){
                 NavigationComponent(
                     currentDestination = currentDestination,
                     onTabClick = { route ->
-                        navController.navigate(route)
+                        navController.navigate(route) {
+                            popUpTo<MoviesRoute> { saveState = true }
+                            launchSingleTop = true
+                            restoreState = true
+                        }
                     }
                 )
             }
@@ -75,7 +82,7 @@ fun AppNavHost(modifier: Modifier = Modifier){
             modifier = modifier
                 .padding(innerpadding)
         ) {
-            mainNavGraph(navController, currentDestination)
+            mainNavGraph(navController, movieViewModel)
         }
     }
 }
