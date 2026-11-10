@@ -23,13 +23,13 @@ fun MoviePreview(){
         contentAlignment = Alignment.Center,
         modifier = Modifier
             .fillMaxSize()
-            .padding(20.dp),
+            .padding(40.dp),
     ){
         MovieBackgroundPreview()
 
         Box(
             modifier = Modifier
-                .size(700.dp)
+                .size(600.dp)
                 .offset(x = 30.dp,y = (-30).dp)
                 .shadow(
                     elevation = 6.dp,
